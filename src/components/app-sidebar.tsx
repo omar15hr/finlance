@@ -18,6 +18,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { ModeToggle } from "./mode-toggle";
 
 type MenuItem = {
   title: string;
@@ -107,16 +108,9 @@ export function AppSidebar() {
           })}
         </SidebarMenu>
 
-        {/* User Profile */}
         <div className="mt-auto pt-4 border-t border-gray-800">
           <div className="flex items-center p-3 rounded-lg cursor-pointer transition-colors">
-            <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-medium">
-              OM
-            </div>
-            <div className="ml-3">
-              <p className="text-sm font-medium">Omar H.</p>
-              <p className="text-xs text-gray-400">Admin</p>
-            </div>
+           <ModeToggle />
           </div>
         </div>
       </SidebarContent>
