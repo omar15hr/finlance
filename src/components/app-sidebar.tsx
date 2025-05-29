@@ -60,11 +60,11 @@ export function AppSidebar() {
   return (
     <Sidebar className="bg-[#1E1E2D] border-r border-gray-800">
       <SidebarContent className="p-4">
-        <div className="flex items-center justify-center mb-10 p-4">
-          <div className="p-2 rounded-lg">
+        <div className="flex items-center justify-center mb-10 p-4 gap-3">
+          <span className="ml-3 text-2xl font-bold">Finlance</span>
+          <div className="rounded-lg">
             <Scale className="w-6 h-6" />
           </div>
-          <span className="ml-3 text-2xl font-bold">Finlance</span>
         </div>
 
         {/* Menu Items */}
